@@ -769,11 +769,11 @@ $(function(){
         //Create a svg array 
         var svgs = new Array(number_of_loaded_datasets);
 		
-        var solidLine = $("<div class = ' NEW' id = 'nn' ><svg width='87' height='24'><line x1='40' y1='20' x2='80' y2='20' style='stroke:black; stroke-width:1px;'></svg><label for='solidLine'>Country Line(solid)</label></div>");
+        var solidLine = $("<div class = 'LINE1' id = 'NEWLINE1' ><svg width='87' height='24'><line x1='40' y1='20' x2='80' y2='20' style='stroke:black; stroke-width:1px;'></svg><label for='solidLine'>Country Line(solid)</label></div>");
 		dialogJQ.append(solidLine);
-		var dashedLine = $("<div class = ' NEW' id = 'nn' ><svg width='85' height='24'><line x1='40' y1='20' x2='80' y2='20' style='stroke:black; stroke-width:1px;stroke-dasharray: 3,3;'></svg><label for='dashedLine'> Continent Average </label></div>");
+		var dashedLine = $("<div class = 'LINE2' id = 'NEWLINE2' ><svg width='85' height='24'><line x1='40' y1='20' x2='80' y2='20' style='stroke:black; stroke-width:1px;stroke-dasharray: 3,3;'></svg><label for='dashedLine'> Continent Average </label></div>");
 		dialogJQ.prepend(dashedLine);
-		var globalLine = $("<div class = ' NEW' id = 'nn' ><svg width='96' height='24'><line x1='40' y1='20' x2='80' y2='20' style='stroke:black; stroke-width:1px;stroke-dasharray: 7,7;'></svg><label for='globalLine'> Global Average </label></div>");
+		var globalLine = $("<div class = ' LINE3' id = 'NEWLINE3' ><svg width='96' height='24'><line x1='40' y1='20' x2='80' y2='20' style='stroke:black; stroke-width:1px;stroke-dasharray: 7,7;'></svg><label for='globalLine'> Global Average </label></div>");
 		dialogJQ.prepend(globalLine);
 		
 	    var continent_checkbox = $("<input type='checkbox' id='continent_checkbox'><label for='continent_checkbox'> Show continent average</label>");
